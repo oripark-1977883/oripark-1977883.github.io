@@ -21,7 +21,6 @@ h3, #Header h1{
     font-family: "Passion One";
     color: #FFBC00; 
     text-shadow: 3px 5px brown;
-
 }
 
 div{
@@ -32,6 +31,14 @@ div{
 
 a{
     font-size: 24px;
+}
+
+a:visited {
+    color: gold;
+}
+
+a:hover {
+    color: plum;
 }
 
 h3{
@@ -45,6 +52,7 @@ ul{
 
 #Header{
     width: 500px;  
+    position: sticky;
 }
 
 #Header h1{
@@ -61,3 +69,13 @@ ul{
     padding: 15px;
     width: 700px;
 }
+
+img {
+    opacity: 0.5;
+    filter: alpha(opacity=50); 
+  }
+  
+  img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); 
+  }
