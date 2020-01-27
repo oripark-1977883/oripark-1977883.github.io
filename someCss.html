@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+    <head>
+        <title> Cascade </title>
+        <link rel="stylesheet" type="text/css" href="positive.css"/>
+        <style>
+            .imgbox {
+                display: grid;
+                height: 100%;
+                position: relative;
+                text-align: center;
+                font-size: xx-large;
+                color:violet;
+                font-weight: bolder;
+                text-shadow:
+                -1px -1px white,
+                1px -1px 0 white,
+                -1px 1px 0 white,
+                1px 1px 0 white; 
+            }
+            .center-fit {
+                width: 100%;
+                height:auto;
+            }
+            .centered {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .rotateimg180 {
+                -webkit-transform:rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+                transform: rotate(180deg);
+                margin: 20px;
+            }
+        </style>
+    </head>
+
+
+    <body>
+        <h1>Level 1:</h1>
+
+        <p style="font-family:'Courier New', Courier, monospace" id="lorem">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sollicitudin lectus quis urna mattis, ut bibendum erat fermentum. Duis efficitur, ipsum nec dignissim condimentum, velit nisi porttitor urna, eget auctor metus sapien id augue. Curabitur ut finibus ligula, non ornare enim. Aliquam pretium ex massa, vel hendrerit tellus elementum vel. In pretium diam in metus tempus, at dignissim quam semper. Donec vitae suscipit mi, eget accumsan nisl. Suspendisse feugiat ante eu lacinia suscipit. Maecenas augue metus, posuere in lacinia non, semper vitae purus. Sed vitae ex fringilla, feugiat sapien vel, lobortis mi. Duis rhoncus eget nulla ac tempor. Donec pretium dignissim tortor rutrum imperdiet. Praesent euismod euismod diam. Pellentesque sit amet tortor quam. Suspendisse tristique lobortis velit quis porttitor. Vivamus mollis dignissim aliquam.
+        </p>
+
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+            Suspendisse molestie, orci vel venenatis facilisis, mauris nulla cursus lectus, tincidunt gravida dolor ipsum quis dui. Morbi dolor mauris, mattis nec eleifend eget, mattis ac nibh. Mauris mauris metus, ultricies non eros non, convallis vehicula sem. Donec id varius odio. In blandit elementum dapibus. Integer et luctus lectus. Nulla eu urna molestie lorem fringilla hendrerit et eu ligula. Aliquam convallis commodo vulputate. Duis aliquet consequat tortor id iaculis. Donec eleifend quis felis tristique luctus. Etiam et rutrum diam. Nulla facilisi. Fusce interdum scelerisque erat. Integer nec pellentesque neque, sit amet consectetur erat.
+        </p>
+
+        <img src="icon.gif" alt="Lesser Dog" height="50" width="50"> </br>
+        <img src="dark_wood.png" alt="Yup, it's wood." height="50" width="59">
+
+        <p style="background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;"> 
+            Have a Raaaaaaaaaaaaaaaaaiiiiiiiiiiinnnnnbooooooooooowwww :3
+            </p>
+        </br>
+        <p style="background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: border-box;">===================================================================================================</p> </br></br>
+        <h1>Level 2:</h1> </br>
+
+        <div class="imgbox">
+            <img class="center-fit" src='thedoctor.jpg'>
+            <div class="centered">Wouldn't you like to be a pepper, too?</div>
+        </div> </br>
+
+        <div class="imgbox">
+            <img class="rotateimg180" src='thedoctor.jpg'>
+            <div class="centered">yes</div>
+        </div> </br> </br>
+    
+        <div class="imgbox">
+            <img src="meme.gif">
+            <div class="centered" style="border-style: dotted;">HELP DOC I GOT DOTS</div>
+        </div>
+
+        </br>
+        <p style="background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: border-box;">===================================================================================================</p> </br></br>
+        <h1>Level 3: Escape from the City</h1> </br>
+
+        <script>
+            function changeCSS(cssFile, cssLinkIndex) {
+
+                var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+            
+                var newlink = document.createElement("link");
+                newlink.setAttribute("rel", "stylesheet");
+                newlink.setAttribute("type", "text/css");
+                newlink.setAttribute("href", cssFile);
+            
+                document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+        }
+        </script>
+
+        <a href="#" onclick="changeCSS('anExternal.css', 0);">Click me to load external css!</a> </br> </br>
+
+        <p><img src="thedoctor.jpg" style="width:250px;height:170px;margin-left:15px;" id="round">
+            Aliquam finibus dui in mauris sagittis ultrices. Vivamus viverra lorem eu ipsum egestas, quis tincidunt diam efficitur. Sed ullamcorper nisl aliquam magna tristique, et sagittis enim eleifend. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus condimentum feugiat sem, eget vehicula nibh tristique nec. Nam imperdiet urna vitae ullamcorper mollis. Maecenas rhoncus turpis eget leo suscipit congue. Proin malesuada tortor maximus lacus porta facilisis. Integer nec odio pharetra, congue dolor vulputate, porta nulla. Aliquam dictum, mauris ac consectetur fringilla, nisi felis sagittis augue, ut finibus dolor tortor at est. Fusce euismod pulvinar lobortis. Sed eu nisi vehicula, ornare nulla non, egestas nunc. Nullam et posuere justo. Ut ultrices mi eget ultricies feugiat. Suspendisse ultricies condimentum posuere. Praesent eu iaculis mi. Etiam a pharetra quam. Nulla at iaculis sapien, quis auctor velit. Donec ut enim dignissim, aliquet justo et, faucibus leo. Curabitur finibus erat non luctus congue. Maecenas ut lacus ligula. Integer quis nisl sit amet est sodales luctus. Aenean pharetra ante lorem, eget placerat ex elementum eu. Vivamus sit amet egestas lectus, in aliquet felis.
+        </p> </br>
+
+        <p style="background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: border-box;">===================================================================================================</p> </br></br>
+
+    </body>
+
+</html>
