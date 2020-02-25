@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Work for Spice Co!(TM)</title>
+	<link href="anExternal.css" rel="stylesheet">
+</head>
+
+<body>
+<div>
+
+<h2>Work for Spice Co!(TM)</h2>
+<h3>We're Spicy ;)</h3>
+
+<form role="form" action="http://gclass.alexburner.com/formtest.php" method="post">
+
+	<fieldset>
+        <legend>How Spicy Are You?(TM)?</legend>
+    </br>
+
+		<div>
+			<label>Your Spicy Legal Name:</label>
+            <div>
+				<input type="text" name="applicant_legal_name">
+            </div>
+            
+        <div>
+            <label>Your SPICY Preferred Name:</label>
+            <div>
+                <input type="text" name="applicant_preferred_name">
+            </div>
+
+        </div>
+        
+		<div>
+			<label>That Poppin' Place You Get Mail:</label>
+			<div>
+				<input type="text" name="applicant_street_address">
+            </div>
+            
+        </div>
+        
+		<div>
+			<label>In the Great City of:</label>
+			<div>
+				<input type="text" name="applicant_city">
+			</div>
+        </div>
+        
+		<div>
+			<label>and the State of:</label>
+			<div>
+				<select name="applicant_state">
+					<option value="" selected="true"></option>
+                    <option value="DN">Denial</option>
+				</select>
+			</div>
+        </div>
+        
+		<div>
+			<label>ZIP Code? (You try making a joke about ZIP Codes)</label>
+			<div>
+				<input type="text" name="applicant_zip">
+			</div>
+        </div>
+	</fieldset>
+
+</br>
+
+	<fieldset>
+        <legend>Availability to Spice It Up!(TM)</legend>
+        
+    </br>
+
+		<div>
+			<label>BE HONEST: are you Spicy?</label>
+			<div>
+				<div>
+					<label>
+						<input type="radio" name="applicant_spiciness" value="Spicy">Yeah!!!
+					</label>
+				</div>
+				<div>
+					<label>
+						<input type="radio" name="applicant_spiciness" value="DoNotHire">Uhh...
+					</label>
+				</div>
+			</div>
+        </div>
+        
+    </br>
+
+		<div>
+			<label>What, in your opinion, is the appropriate time of day for Extra Spiciness? (check all that apply)</label>
+			<div>
+				<div>
+					<label>
+						<input type="checkbox" name="extra_spicy_mn" value="Early">
+						Early Morning
+					</label>
+				</div>
+				<div>
+					<label>
+						<input type="checkbox" name="extra_spicy_nn" value="Noontime">
+						Around Noon
+					</label>
+				</div>
+				<div>
+					<label>
+						<input type="checkbox" name="extra_spicy_ev" value="Evening">
+						Evening
+					</label>
+				</div>
+				<div>
+					<label>
+						<input type="checkbox" name="extra_spicy_ln" value="LateNight">
+						Late Night
+					</label>
+				</div>
+			</div>
+        </div>
+        
+    </br>
+
+		<div>
+            <label>Hours available to Spice It Up!(TM)</label>
+            
+        </br>
+
+			<div>
+				<table>
+					<tr>
+						<td></td>
+						<th>Spiceday</th>
+						<th>Mintday</th>
+						<th>Thymeday</th>
+						<th>Wasabiday</th>
+						<th>Tandoriday</th>
+						<th>Fermentoday</th>
+						<th>Saffronday</th>
+					</tr>
+					<tr>
+						<th>From</th>
+						<td><input type="time" name="su_from"></td>
+						<td><input type="time" name="mo_from"></td>
+						<td><input type="time" name="tu_from"></td>
+						<td><input type="time" name="we_from"></td>
+						<td><input type="time" name="th_from"></td>
+						<td><input type="time" name="fr_from"></td>
+						<td><input type="time" name="sa_from"></td>
+					</tr>
+					<tr>
+						<th>Until</th>
+						<td><input type="time" name="su_until"></td>
+						<td><input type="time" name="mo_until"></td>
+						<td><input type="time" name="tu_until"></td>
+						<td><input type="time" name="we_until"></td>
+						<td><input type="time" name="th_until"></td>
+						<td><input type="time" name="fr_until"></td>
+						<td><input type="time" name="sa_until"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</fieldset>
+
+</br>
+
+	<fieldset>
+        <legend>Personal Spicement</legend>
+        
+    </br>
+		<div>
+			<label>What is the Spiciest thing you have ever done in your whole entire life?</label> </br>
+			<textarea name="MySpiciestMoment" rows="10"></textarea>
+		</div>
+
+		<div>
+			<label>Upload your Spiciest resume.</label> </br>
+			<input type="file" name="applicant_resume">
+		</div>
+
+
+    </fieldset>
+    
+    <fieldset>
+        <legend>Account Security! It's Spicy ;)</legend>
+    </br>
+
+		<div>
+			<label>Spicenet(TM) Email Address</label>
+			<div>
+				<input type="text" name="applicant_email">
+			</div>
+		</div>
+
+		<div>
+			<label>Password, We'll add the salt</label>
+			<div>
+				<input type="password" name="password">
+			</div>
+		</div>
+
+		<div>
+			<label>Repeat passwo-- actually, Facebook requires users to confirm email rather than passwords, as the former is arguably more secure and more effective for account recovery.</label>
+			<div>
+				<input type="text" value="We'll just skip this part for now." readonly>
+			</div>
+		</div>
+	</fieldset>
+
+</br>
+
+	<input type="submit" value="Submit form">
+
+</br>
+
+</form>
+</div>
+</body>
+</html>
